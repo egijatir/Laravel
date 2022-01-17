@@ -14,13 +14,23 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('home',[
+        "title"=>"home",
+    ]);
 });
 Route::get('/about', function () {
-    return view('about');
+    return view('about',[
+        "title"=>"about",
+        "name"=>"Egi Jati Ramadhan",
+        "email"=>"egijatir@gmail.com",
+        "images"=>"img/newhead.jpeg"
+
+    ]);
 });
 
 Route::get('/post', function () {
-    return view('post');
+    return view('post',[
+        "title"=>"posts",
+    ]);
 });
 
