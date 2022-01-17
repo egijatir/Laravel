@@ -1,4 +1,11 @@
 @extends('layouts.main')
 @section('container')
-<h1>Halaman Post</h1>
+    
+    <article class="mb-5">
+    <h2>{{ $post->title }}
+    </h2>
+
+    <p>{!! $post->body !!}</p>
+    </article>
+   <a href="/posts">back to post</a>
 @endsection

@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Post;
+use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,9 +30,9 @@ Route::get('/about', function () {
     ]);
 });
 
-Route::get('/post', function () {
-    return view('post',[
-        "title"=>"posts",
-    ]);
-});
 
+Route::get('/posts',[PostController::class,'index']);
+
+//halaman  singel
+
+Route::get('posts/{post:slug}', [PostController::class,'show']);

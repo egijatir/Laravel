@@ -13,7 +13,7 @@
           <a class="nav-link {{ ($title==='about' ?'active':'') }}" href="/about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {{ ($title==='posts' ?'active':'') }}" href="/post">Post</a>
+          <a class="nav-link {{ ($title==='posts' ?'active':'') }}" href="/posts">Posts</a>
         </li>
       </ul>
       <form class="d-flex">
